@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D hushanverner</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <a href="#" class="logo">2<span>D</span></a>
+            <i class="bx bx-shopping-bag" id="cart-icon" data-quantitiy="0"></i>
+            
+            <div class="cart">
+                <h2 class="cart-title">Զամբյուղ</h2>
+                <div class="cart-content"></div>
+
+                <div class="total">
+                    <div class="total-title">ընդհանուր</div>
+                    <div class="total-price">$0</div>
+                </div>
+
+                <button type="button" class="btn-buy" onclick="doSomething()">Գնել</button>
+        
+                <p id="test"></p>
+                <i class="bx bx-x" id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="shop container">
+        <div class="shop-content">
+            <div class="product-box">
+                <img 
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEho7XGgvzUpyifTlDGzwHysqVmTfbHFOdYD7rRhTKFtzaTP2WzdmLyhyHQtp2gUSY6_BrnhPK818mTZSybjnySSa_qMxG3dTMyPMUyWWaJO8Au_FLiChiyF_SIL2EIU7USZGvhGr14w_e6w9wpZ8axK0tqI51Wq4DeV50-SXkj9PwsRGdqPvmzvmSf8v6oa/s320/product1.png" 
+                alt=""
+                class="product-img">
+                <h2 class="product-title">Arjuk</h2>
+                <span class="price">$10</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img 
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimcDIRf3V065KSYS2rfQc39EHLiHDFIJwBWCBxYW4PouVSAlI_qxU2aIITuoyCjDsk9CxpbVV0wplNNfhW9uvtrY3OXOzSUxWjUjyunj0usdZs-OnkBky8ez-Q6oscB_tyvNIpY4QwaI0SABJ5GF18UjQJQZ6xpHT71o9U7Pwr7K8fvcAnH9Bc0pIv8LUl/s320/product2.png" 
+                alt=""
+                class="product-img">
+                <h2 class="product-title">My litle angel</h2>
+                <span class="price">$13</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img 
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilySLHBhhvswSMLsgzWVJpabdEwF4P7bJVRqv669m95xqHo05InfDxd-ICvJzpeiWStWQz9-9pqShmMSz__eBkppuY0p5Lcw_Mq7sdlIlYu_p75YTcNSnVjRpgcfn_GgxksKz3jo0Dhr1yMR9vSUGuGDMDdqTr34IXDnz4zZW_t5ToapgvTEQtjU6weEsx/s1600/product3.png" 
+                alt=""
+                class="product-img">
+                <h2 class="product-title">For you</h2>
+                <span class="price">$8</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img 
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8cO5y06S-kIyoqU92WDmwK8RkRMkLOZfEDrQRWofIU440Ykut6dPSUk42InOrTRWw64irg9j2wgHp0c7AOuhqYKe85DhB7P2uV2f6_UspkZSOXhGu2vTY1Qgalc5FQBh0yhomzy8pXcgxwi1GoHVIXHsBIcTfm69CWlL8MHDAgWjv1A7pU1iu2DwnIuwf/s320/product4.png" 
+                alt=""
+                class="product-img">
+                <h2 class="product-title">Jesus</h2>
+                <span class="price">$20</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img 
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMbUXSGcwLUghBsX6r9KIZNbGRFk78yYjhyphenhyphen3R9yGkVm-ONZ7z32c6w2ZHVqK4rrcA3Kig1cCMSgcd3ObfswoAWn8LNu0535KU8xKaqE4AtINCkFlRQsfb1fTb5CIhh5m68lT8bhDgIpmm6fKByFPrbzb3Ub3yV4XdSvepCWvRqb2c-b45UmaTevp3aZa_x/s1600/product5.png" 
+                alt=""
+                class="product-img">
+                <h2 class="product-title">Arjuk</h2>
+                <span class="price">$12</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img 
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiq4aJR0FO-lqCVl_Gf6z90o6G8x2kNFgiBhwVb3y01O4SKRYVjjSNBPILFk7bw2WsRjbSpPyfADecqwwf1BpwAKtw5dzM64eWhnl0fm32cyrsp5NqwSTRxdngSWFzE381pfvAL8fJSNAze9NxWV1MP_9SZDZawpEvvuuIIEOwV48nG24agVBCxKF-6VOzp/s1600/product6.png" 
+                alt=""
+                class="product-img">
+                <h2 class="product-title">Miyagi</h2>
+                <span class="price">$15</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img 
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhjLVjJlvG1RyUTn5DvvJ5ZM2gi-jgSvE274-QUs6Pvy36bFS_i9aqfYb7i4KNOsBBYfttxDjRlkgVZr9UzNo1IIqRyYbjpMjkSwr4bZiMNOM5nBAE4p-_TpKe1HCCBCpipD52KyTQZ0iQA3vkeUpctkN7-DDbK79_yanIzdz_wegM1f5m55QGJ-YA6LdHM/s320/product7.png" 
+                alt=""
+                class="product-img">
+                <h2 class="product-title">stich</h2>
+                <span class="price">$18</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img 
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjliW3iz07X3IdbkHeON2EtAuj4o97oIEb7UwkfrR1lO2bwsGH-JTzfOPePNnzrDB6hUyvZlw6tz5gdiJWStwFYmAnT5ueNQ6TIoyKFBR1bYq3GROPggJXpzwLUcZl4Yx51R_QaTkmV1jj1meVXiH4tOy3XKG7iRQDkOZww0Jf9OeHc5zlFdW_JGklnP6BP/s320/product8.png" 
+                alt=""
+                class="product-img">
+                <h2 class="product-title">heart</h2>
+                <span class="price">$15</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js "></script>
+</body>
+</html>
